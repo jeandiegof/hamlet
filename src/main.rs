@@ -1,12 +1,8 @@
 use rayon::prelude::*;
 use std::time::Instant;
 
-// 250_000_000
-//   1_000_000
-//       1_000
-
 fn main() {
-    let n = 250_000_000;
+    let n = 150_000_000;
 
     let begin = Instant::now();
     let sum: u128 = (0..n).map(|v| v * v).sum();
